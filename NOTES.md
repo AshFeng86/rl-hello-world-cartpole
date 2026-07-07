@@ -1,7 +1,7 @@
 # Commands I keep using:
-./isaaclab.sh -p <path/to/script.py> [script args] --headless        # no visuals, faster
-./isaaclab.sh -p <path/to/script.py> [script args] --livestream 2   # watch in /viewer/ tab
-./isaaclab.sh -p scripts/tutorials/02_scene/create_scene.py --num_envs 32 --livestream 2
+- ./isaaclab.sh -p <path/to/script.py> [script args] --headless        # no visuals, faster
+- ./isaaclab.sh -p <path/to/script.py> [script args] --livestream 2   # watch in /viewer/ tab
+- ./isaaclab.sh -p scripts/tutorials/02_scene/create_scene.py --num_envs 32 --livestream 2
 
 # Concept in my own words:
 - policy: the neural network that decides. Give it a situation, it outputs one action. The dog's brain, not the dog's moves.
