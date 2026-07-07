@@ -9,6 +9,7 @@ Trained a PPO policy on Isaac-Cartpole-v0 with 4096 parallel environments on a c
 poles flailing from random join efforts
 ### After (trained policy)
 all poles balanced
+
 https://github.com/user-attachments/assets/80e78574-073f-474d-8bb7-b0866a178e61
 
 
