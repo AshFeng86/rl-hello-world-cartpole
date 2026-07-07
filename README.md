@@ -24,7 +24,7 @@ all poles balanced
 - The policy's shape: 4->32->32->1. Four inputs (cart position, cart velocity, pole angle, pole velocity), two hidden layers, one output (push force). Training never changes the shape - it only tunes the weights on the connections. ~1,300 dials
 - Vectorization: my Mac trained 1 CartPole. The GPU ran 4096 at once. Same task, 200x the experience per second. This is why Isaac Lab exists.
 
-##Commands I keep using
+## Commands I keep using
 every session starts with
 cd /workspace/isaaclab
 
@@ -38,7 +38,7 @@ train (150 iterations, ~37s on L40S)
 record the trained policy to mp4 (more reliable than live streaming)
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Cartpole-v0 --num_envs 32 --headless --video --video_length 300
 
-##Things that broke -> fixes
+## Things that broke -> fixes
 Cloud GPU marketplaces are less reliable than I expected. What I learned the hard way:
 - AWS us-east-2 stalled twice at provisioning (empty logs 15+min)
 - One deploy click = one billed machine
@@ -47,7 +47,7 @@ Cloud GPU marketplaces are less reliable than I expected. What I learned the har
 - Live streaming (WebRTC) is the flakiest link.
 
 
-##Ladder context
+## Ladder context
 - Rung 1: YOLO11n emptys-shelf detector (Project 1, 1.5)
 - Rung 2: real-time gap tracking + VLM reasoning (Project 2, 2.5)
 - Rung 3 pre-step: PPO on CartPole locally (rl-hellow-world-cartpole)
