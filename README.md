@@ -19,10 +19,12 @@ https://github.com/user-attachments/assets/8973b860-c1ac-4989-9999-526105358840
 ## The phase 4 experiment
 - Change cart_vel weight in RewardsCfg from -0.01 -> -1.0 (100x penalty on cart movement).
 - My prediction: carts stay as still as possible; logged cart_vel goes more negative than -0.004
+
 What happened:
 - Cart moved ~22% less and held poles straighter (vertical poles need fewer corrections).
 - Logged cart_vel plunged to -0.36 - the 100x multiplier swamped the modest slowdown.
 - The twist: cart_out_of_bounds deaths went from 7% to 44%. Returning to center is pure movement cost with no reward attached - I priced speed but never priced position - so the policy balances perfectly while silently drifting off the edge of the world.
+
 Lessons:
 - The policy optimizes exactly what you price, not what you mean.
 - Per-step penalties are rent; terminal penalties (the -2 death smack) are a one0time fine.
