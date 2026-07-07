@@ -9,8 +9,9 @@ Trained a PPO policy on Isaac-Cartpole-v0 with 4096 parallel environments on a c
 poles flailing from random join efforts
 ### After (trained policy)
 all poles balanced
-<img width="1980" height="1103" alt="Screenshot 2026-07-07 at 8 46 54 PM" src="https://github.com/user-attachments/assets/e0261ace-d240-4530-8d7b-607df2dc9d49" />
-<img width="1979" height="1114" alt="Screenshot 2026-07-07 at 8 47 17 PM" src="https://github.com/user-attachments/assets/d8ed436c-2939-4bc1-83ef-566c411c5220" />
+https://github.com/user-attachments/assets/80e78574-073f-474d-8bb7-b0866a178e61
+
+
 
 ## Concepts in my own words
 - Policy: the neural network that decides. Give it a situation, it outputs one action. The dog's brain, not the dog's moves.
