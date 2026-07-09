@@ -7,6 +7,10 @@
 - ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Cartpole-v0 --num_envs 4096 --headless    # Train 150 iterations
 - ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Cartpole-v0 --num_envs 32 --livestream 2   # Watch the trained policy
 - ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Cartpole-v0 --num_envs 32 --headless --video --video_length 300   #record video
+- ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py \
+  --task Isaac-Reach-Franka-v0 --headless
+- ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py \
+  --task Isaac-Reach-Franka-v0 --num_envs 32 --headless --video --video_length 400
 
 # Concept in my own words:
 - policy: the neural network that decides. Give it a situation, it outputs one action. The dog's brain, not the dog's moves.
